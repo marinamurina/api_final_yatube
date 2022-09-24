@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Описание
+=======
+# Описание
+>>>>>>> e4e43c06352fcd8deec2a2121c04f6771e2d9f9c
 
 Проект представляет собой API для yatube.
 
@@ -12,27 +16,46 @@
 
 Аутентифицированным пользователям разрешено изменение и удаление своего контента; в остальных случаях доступ предоставляется только для чтения.
 
+<<<<<<< HEAD
 Установка
 
 1) Склонировать репозиторий:
 Клонировать репозиторий (git clone) и перейти в него в командной строке (cd)
 
 2) Создать и активировать виртуальное окружение для проекта
+=======
+# Установка
+
+## 1) Склонировать репозиторий:
+
+Клонировать репозиторий (git clone) и перейти в него в командной строке (cd)
+
+## 2) Создать и активировать виртуальное окружение для проекта
+>>>>>>> e4e43c06352fcd8deec2a2121c04f6771e2d9f9c
 
 PY -m venv venv
 
 source venv/scripts/activate
 
+<<<<<<< HEAD
 3) Установить зависимости из файла requirements.txt:
+=======
+## 3) Установить зависимости из файла requirements.txt:
+>>>>>>> e4e43c06352fcd8deec2a2121c04f6771e2d9f9c
 PY -m pip install --upgrade pip
 
 PY pip install -r requirements.txt
 
+<<<<<<< HEAD
 4) Сделать миграции
+=======
+## 4) Сделать миграции
+>>>>>>> e4e43c06352fcd8deec2a2121c04f6771e2d9f9c
 PY manage.py makemigrations
 
 PY manage.py migrate
 
+<<<<<<< HEAD
 5) Запустить сервер
 PY manage.py runserver
 
@@ -43,6 +66,18 @@ PY manage.py runserver
 При дальнейшей отправке запросов токен передается в заголовке Authorization: Bearer <токен>
 
 Примеры обращения к методам:
+=======
+## 5) Запустить сервер
+PY manage.py runserver
+
+# Примеры
+
+Для доступа к API необходимо получить JWT-токен: выполнить POST-запрос localhost:8000/api/v1/token/, передав поля username и password. 
+
+При дальнейшей отправке запросов токен передается в заголовке Authorization: Bearer <токен>
+
+Примеры обращения к методам: 
+>>>>>>> e4e43c06352fcd8deec2a2121c04f6771e2d9f9c
 
 /api/v1/posts/ (GET, POST, PUT, PATCH, DELETE)
 
@@ -50,4 +85,10 @@ api/v1/posts/{post_id}/comments/ (GET, POST, PUT, PATCH, DELETE)
 
 /api/v1/follow/ (GET, POST)
 
+<<<<<<< HEAD
 /api/v1/groups/ (GET)
+=======
+/api/v1/groups/ (GET)
+
+
+>>>>>>> e4e43c06352fcd8deec2a2121c04f6771e2d9f9c
