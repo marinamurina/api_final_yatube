@@ -68,6 +68,14 @@ PY manage.py runserver
   ]
 }
 
+POST-запрос:
+
+{
+  "text": "string",
+  "image": "string",
+  "group": 0
+}
+
 ответ API на POST-запрос:
 
 {
