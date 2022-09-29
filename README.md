@@ -48,7 +48,27 @@ PY manage.py runserver
 Примеры обращения к методам и ответов:
 
 ### 1)
-/api/v1/posts/ (GET, POST, PUT, PATCH, DELETE)
+/api/v1/posts/ (GET, POST)
+
+ответ API на GET-запрос:
+
+{
+  "count": 123,
+  "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "results": [
+    {
+      "id": 0,
+      "author": "string",
+      "text": "string",
+      "pub_date": "2021-10-14T20:41:29.648Z",
+      "image": "string",
+      "group": 0
+    }
+  ]
+}
+
+ответ API на POST-запрос:
 
 {
 "id": 0,
@@ -62,6 +82,8 @@ PY manage.py runserver
 ### 2)
 
 /api/v1/groups/ (GET)
+
+ответ API на GET-запрос:
 
 [
   {
