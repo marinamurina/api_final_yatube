@@ -42,7 +42,7 @@ PY manage.py migrate
 
 PY manage.py runserver
 
-# Примеры
+## Примеры
 
 Для доступа к API необходимо получить JWT-токен: выполнить POST-запрос localhost:8000/api/v1/token/, передав поля username и password.
 
@@ -50,71 +50,110 @@ PY manage.py runserver
 
 Примеры обращения к методам и ответов:
 
-### 1)
-/api/v1/posts/ (GET, POST)
+### 1) 
 
-ответ API на GET-запрос:
+/api/v1/posts/ (GET, POST) 
 
-{
+ 
 
-  "count": 123,
+ответ API на GET-запрос: 
 
-  "next": "http://api.example.org/accounts/?offset=400&limit=100",
-  
-  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
-  
-  "results": [
-  
-  {
-  
-      "id": 0,
-      
-      "author": "string",
-      
-      "text": "string",
-      
-      "pub_date": "2021-10-14T20:41:29.648Z",
-      
-      "image": "string",
-      
-      "group": 0
-    
-    }
-  
-  ]
+ 
 
-}
+{ 
 
-POST-запрос:
+  "count": 123, 
 
-{
-  "text": "string",
-  "image": "string",
-  "group": 0
-}
+  "next": "http://api.example.org/accounts/?offset=400&limit=100", 
 
-ответ API на POST-запрос:
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100", 
 
-{
-"id": 0,
-"author": "string",
-"text": "string",
-"pub_date": "2019-08-24T14:15:22Z",
-"image": "string",
-"group": 0
-}
+  "results": [ 
 
-### 2)
+    { 
 
-/api/v1/groups/ (GET)
+      "id": 0, 
 
-ответ API на GET-запрос:
+      "author": "string", 
 
-[
-  {
-    "id": 0,
-    "title": "string",
-    "slug": "string",
-    "description": "string"
-  }
-]
+      "text": "string", 
+
+      "pub_date": "2021-10-14T20:41:29.648Z", 
+
+      "image": "string", 
+
+      "group": 0 
+
+    } 
+
+  ] 
+
+} 
+
+ 
+
+POST-запрос: 
+
+ 
+
+{ 
+
+  "text": "string", 
+
+  "image": "string", 
+
+  "group": 0 
+
+} 
+
+ 
+
+ответ API на POST-запрос: 
+
+ 
+
+{ 
+
+"id": 0, 
+
+"author": "string", 
+
+"text": "string", 
+
+"pub_date": "2019-08-24T14:15:22Z", 
+
+"image": "string", 
+
+"group": 0 
+
+} 
+
+ 
+
+### 2) 
+
+ 
+
+/api/v1/groups/ (GET) 
+
+ 
+
+ответ API на GET-запрос: 
+
+ 
+
+[ 
+
+  { 
+
+    "id": 0, 
+
+    "title": "string", 
+
+    "slug": "string", 
+
+    "description": "string" 
+
+  } 
+
+] 
