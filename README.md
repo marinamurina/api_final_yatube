@@ -1,6 +1,6 @@
-# Описание
+## Описание
 
-Проект представляет собой API для yatube.
+Проект представляет собой API для приложения [Yatube](https://github.com/marinamurina/hw05_final) - социальной сети для чтения и публикации постов и комментариев к ним.
 
 Ключевые моменты:
 
@@ -12,30 +12,33 @@
 
 Аутентифицированным пользователям разрешено изменение и удаление своего контента; в остальных случаях доступ предоставляется только для чтения.
 
-# Установка
+## Технологии
+Python 3.7, Django 2.2, Django REST Framework 3.12, Pillow 8.3, Requests 2.26, Thumbnail 12.7
 
-## 1) Склонировать репозиторий:
+## Установка
+
+### 1) Склонировать репозиторий:
 Клонировать репозиторий (git clone) и перейти в него в командной строке (cd)
 
-## 2) Создать и активировать виртуальное окружение для проекта
+### 2) Создать и активировать виртуальное окружение для проекта
 
 PY -m venv venv
 
 source venv/scripts/activate
 
-## 3) Установить зависимости из файла requirements.txt:
+### 3) Установить зависимости из файла requirements.txt:
 
 PY -m pip install --upgrade pip
 
 PY pip install -r requirements.txt
 
-## 4) Сделать миграции
+### 4) Сделать миграции
 
 PY manage.py makemigrations
 
 PY manage.py migrate
 
-## 5) Запустить сервер
+### 5) Запустить сервер
 
 PY manage.py runserver
 
@@ -53,19 +56,33 @@ PY manage.py runserver
 ответ API на GET-запрос:
 
 {
+
   "count": 123,
+
   "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  
   "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  
   "results": [
-    {
+  
+  {
+  
       "id": 0,
+      
       "author": "string",
+      
       "text": "string",
+      
       "pub_date": "2021-10-14T20:41:29.648Z",
+      
       "image": "string",
+      
       "group": 0
+    
     }
+  
   ]
+
 }
 
 POST-запрос:
