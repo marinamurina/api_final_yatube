@@ -21,27 +21,27 @@ Python 3.7, Django 2.2, Django REST Framework 3.12, Pillow 8.3, Requests 2.26, T
 Клонировать репозиторий (git clone) и перейти в него в командной строке (cd)
 
 ### 2) Создать и активировать виртуальное окружение для проекта
-
+```
 PY -m venv venv
 
 source venv/scripts/activate
-
+```
 ### 3) Установить зависимости из файла requirements.txt:
-
+```
 PY -m pip install --upgrade pip
 
 PY pip install -r requirements.txt
-
+```
 ### 4) Сделать миграции
-
+```
 PY manage.py makemigrations
 
 PY manage.py migrate
-
+```
 ### 5) Запустить сервер
-
+```
 PY manage.py runserver
-
+```
 ## Примеры
 
 Для доступа к API необходимо получить JWT-токен: выполнить POST-запрос localhost:8000/api/v1/token/, передав поля username и password.
@@ -59,7 +59,7 @@ PY manage.py runserver
 ответ API на GET-запрос: 
 
  
-
+```
 { 
 
   "count": 123, 
@@ -89,13 +89,13 @@ PY manage.py runserver
   ] 
 
 } 
-
+```
  
 
 POST-запрос: 
 
  
-
+```
 { 
 
   "text": "string", 
@@ -105,13 +105,13 @@ POST-запрос:
   "group": 0 
 
 } 
-
+```
  
 
 ответ API на POST-запрос: 
 
  
-
+```
 { 
 
 "id": 0, 
@@ -127,7 +127,7 @@ POST-запрос:
 "group": 0 
 
 } 
-
+```
  
 
 ### 2) 
@@ -141,7 +141,7 @@ POST-запрос:
 ответ API на GET-запрос: 
 
  
-
+```
 [ 
 
   { 
@@ -157,3 +157,4 @@ POST-запрос:
   } 
 
 ] 
+```
